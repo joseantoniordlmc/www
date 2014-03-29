@@ -30,24 +30,15 @@ body {
 .featurette-divider {
 	margin: 80px 0;
 }
-
-.featurette-image{
-	background:url(../img/btn_white.png) no-repeat bottom; /* 170px x 200px */
-    position:relative;             /* position in the center of the screen */
-    left:50%;
-    right:50%;
-    top:50%;
-    text-align:center;
-    padding: 170px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+#signinButton{
+	margin: 0 auto;
+	width: 110px;
 }
-
 .featurette-image.pull-left {
-	margin-right: 40px;
+	margin-right: 50px;
 }
 .featurette-image.pull-right {
-	margin-left: 40px;
+	margin-left: 50px;
 }
 
 .featurette-heading {

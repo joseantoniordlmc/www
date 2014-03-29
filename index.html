@@ -51,22 +51,21 @@
 
         <!-- START THE FEATURETTES -->
 
-        <hr class="featurette-divider">
-
         <div class="featurette" id="about">
-            <img class="featurette-image img-responsive">
-            <h2 class="featurette-heading">Sign in with Google+: 
+            <h2 class="featurette-heading">
+                Sign in with Google+: 
             </h2>
-          
+            <div id="signinButton">
+            <span
+                class="g-signin"
+                data-callback="signinCallback"
+                data-clientid="CLIENT_ID"
+                data-cookiepolicy="single_host_origin"
+                data-requestvisibleactions="http://schemas.google.com/AddActivity"
+                data-scope="https://www.googleapis.com/auth/plus.login">
+            </span>
+        </div>    
         </div>
-
-        <hr class="featurette-divider">
-
-        <div class="featurette" id="services">
-            <!--<img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">-->
-            <p class="lead"></p>
-        </div>
-
         <!-- /END THE FEATURETTES -->
 
         <hr>
@@ -78,7 +77,13 @@
         <!-- /END OF FOOTER -->
 
     </div>
-        
+        <script type="text/javascript">
+            (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/client:plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
