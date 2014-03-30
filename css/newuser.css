@@ -1,12 +1,9 @@
 body {
 	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
 	width: 100%;
-	overflow: hidden;
 }
 html{
 	width: 100%;
-	height: 100%;
-	overflow: hidden;
 }
 
 .header-image {	 
@@ -26,7 +23,6 @@ html{
 }
 .featurette {
 	overflow: hidden;
-	align:center;
 }
 
 .featurette-image.pull-left {

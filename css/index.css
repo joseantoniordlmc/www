@@ -17,15 +17,10 @@ body {
 }
 
 .headline > .container > h1 {
-	font-size: 130px;
-	background: #ffffff;
-	background: rgba(0, 0, 0, 0.5);
-}
 
+}
 .headline > .container > h2 {
 	font-size: 77px;
-	background: #ffffff;
-	background: rgba(0, 0, 0, 0.5);
 }
 
 .featurette-divider {
