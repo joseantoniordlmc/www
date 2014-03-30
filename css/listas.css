@@ -43,6 +43,9 @@ a,a:hover{
 	text-decoration: none;
 	color: black;
 }
+.list-group{
+	text-align: center;
+}
 
 footer {
 	margin: 50px 0;
