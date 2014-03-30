@@ -53,17 +53,23 @@
 
         <div class="featurette" id="about">
             <h2 class="featurette-heading">
-                Sign in with Google+: 
             </h2>
-            <div id="signinButton">
-            <span
+        <div id="signinButton">
+                <form id="button" method="get" action="lookingfor.html">
+                <button type="submit">
+                <span
                 class="g-signin"
                 data-callback="signinCallback"
                 data-clientid="CLIENT_ID"
                 data-cookiepolicy="single_host_origin"
                 data-requestvisibleactions="http://schemas.google.com/AddActivity"
                 data-scope="https://www.googleapis.com/auth/plus.login">
-            </span>
+                </span>
+                </button>
+                </form>
+                <div class="newuser">
+                <a href="http://accounts.google.com" target="_blank"><u>New user?</u></a>
+            </div>
         </div>    
         </div>
         <!-- /END THE FEATURETTES -->

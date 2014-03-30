@@ -34,7 +34,12 @@ body {
 	margin: 0 auto;
 	width: 110px;
 }
-
+#button{
+	border: hidden;
+}
+.newuser{
+	text-align: center;
+}
 
 .featurette-image.pull-left {
 	margin-right: 50px;
