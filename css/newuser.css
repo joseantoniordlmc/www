@@ -1,6 +1,7 @@
 body {
 	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
 	width: 100%;
+	background: transparent;
 }
 html{
 	width: 100%;
@@ -57,7 +58,7 @@ footer {
 
 .headline > .container > h1 {font-size: 105px;}
 .headline > .container > h2 {font-size: 50px;}
-.featurette-divider {margin: 40px 0;}
+.featurette-divider {margin: 40px;}
 .featurette-image {max-width: 50%;}
 .featurette-image.pull-left {margin-right: 10px;}
 .featurette-image.pull-right {margin-left: 10px;}
@@ -78,7 +79,7 @@ footer {
 
 .headline > .container > h1 {font-size: 70px;}
 .headline > .container > h2 {font-size: 32px;}
-.featurette-divider {margin: 30px 0;}
+.featurette-divider {margin: 300px 0;}
 
 }
 
