@@ -1,6 +1,10 @@
 body {
+<<<<<<< HEAD
 	margin-top: 10px;
 	
+=======
+	margin-top: 0px;
+>>>>>>> 3592365e6d963919b6f8b0769c1318c2a0c814ec
 	padding-right: 0px; /* 50px is the height of the navbar - change this if the navbarn height changes */
 }
 
