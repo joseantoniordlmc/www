@@ -56,6 +56,19 @@ body {
 }
 .list-group>.list-group-item{
 	text-align: center;
+	border: 1px solid rgb(237,28,36);
+	padding: 0px 0px;
+	margin-right: 0px
+	margin-left: 0px;
+
+}
+
+a.list-group-item{
+	color: 000;
+}
+.list-group-item:first-child{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 }
 
 footer {
