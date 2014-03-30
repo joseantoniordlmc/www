@@ -43,14 +43,9 @@ body {
 	font-size: 50px;
 }
 
-.busca{
+.element{
 	text-align: center;
 }
-.boton{
-	text-align: center;
-	padding-top: 20px;
-}
-
 footer {
 	margin: 50px 0;
 }
