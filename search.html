@@ -65,7 +65,7 @@
 
         <!-- START THE FEATURETTES -->
     <div class="element">
-        <form action="http://107.170.77.212/mdb/url.php" id="searchForm">
+        <form action="url.php" id="searchForm">
         <input type="text" name="s" placeholder="Search...">
         <input type="submit" value="Search">
         </form>
@@ -96,7 +96,7 @@
 
     <!-- JavaScript -->
     <script>
-	make_html = function(titulo,seen) {
+	make_html = function(titulo) {
 		str = '<tr><td rowspan="2" colspan="2">'+titulo+'</td>';
 		str = str + '<td><a href="#"><img src="img/cameragray.png"></a></td>';
 		str += '</tr> <tr> <td><a href="#"><img src="img/lamp.png"></a></td>';
@@ -117,7 +117,7 @@
         // Put the results in a div
         posting.done(function(data){
 			//console.log(data);
-			j = $.parseJSON(data);
+		j = $.parseJSON(data);
 			//console.log(j);
 		$("#res").html("");
 			for (var key in j){
