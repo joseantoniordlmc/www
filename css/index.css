@@ -13,11 +13,11 @@ body {
 }
 
 .headline {
-	padding: 120px 0;
+	padding: 10px 0;
 }
 
 .headline > .container > h1 {
-
+	padding-top: 0px;
 }
 .headline > .container > h2 {
 	font-size: 77px;
