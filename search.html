@@ -28,9 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="img/logo3.png" width=15%;
-                hspace="5"
-                vspace="15">
+                <img src="img/logo3.png" width=15% hspace="0">
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,21 +63,48 @@
 
         <!-- START THE FEATURETTES -->
     <div class="element">
-        <form action="/url.php" id="searchForm">
+        <form action="url.php" id="searchForm">
         <input type="text" name="s" placeholder="Search...">
         <input type="submit" value="Search">
         </form>
 <!-- the result of the search will be rendered inside this div -->
         <div id="result"></div>
     </div>
+	<div id="resultados">
+		
+		<div class="featurette" id="about">
+		            <!--<img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">-->
+		            <h2 class="featurette-heading">Looking for:
+		                <span class="text-muted">Results</span>
+		            </h2>
+		        </div>
+		        <div class="elemental" width="50%">
+		            <div width="100%" position:"absolute">
+		            <table id="res" class="table-bordered table" width="50%" height="15%" padding="20px">
+		                
+		            </table>
+		            </div>
+		        </div>
+		
+		
+		
+		</div>
         <!-- /END THE FEATURETTES -->
         <!-- /END OF FOOTER -->
 
-    </div>
+    
     <!-- /container -->
 
     <!-- JavaScript -->
     <script>
+	make_html = function(titulo,seen) {
+		str = '<tr><td rowspan="2" colspan="2">'+titulo+'</td>';
+		str = str + '<td><a href="#"><img src="img/cameragray.png"></a></td>';
+		str += '</tr> <tr> <td><a href="#"><img src="img/lamp.png"></a></td>';
+		str += '</tr>';
+		return str;
+					}
+	
         // Attach a submit handler to the form
         $( "#searchForm" ).submit(function(event) {
         // Stop form from submitting normally
@@ -89,17 +114,25 @@
         term = $form.find( "input[name='s']").val(), 
         url = $form.attr("action");
         // Send the data using post
-        var posting = $.post(url,{s:term});
+        var posting = $.get(url,{s:term});
         // Put the results in a div
         posting.done(function(data){
-        var content = $( data ).find("#content");
-        $("#result").empty().append(content);
+			//console.log(data);
+			j = $.parseJSON(data);
+			//console.log(j);
+		$("#res").html("");
+			for (var key in j){
+		$("#res").append(make_html(j[key]));
+		}
+				
+        //var content = $( data ).find("#content");
+        //$( "#result").empty().append(content);
         });
         });
     </script>
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
-
+</div>
 </body>
 
 </html>
