@@ -36,6 +36,10 @@ html{
 	text-align: center;
 }
 
+.element>.tabla>.table-bordered>table{
+	text-align: center;
+}
+
 footer {
 	margin: 50px 0;
 }

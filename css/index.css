@@ -52,6 +52,11 @@ body {
     font-size: 50px;
     text-align: center;
 }
+.list-group{
+	font-size: 25px;
+	max-width: 150%;
+}
+
 
 footer {
 	margin: 50px 0;
