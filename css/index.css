@@ -3,8 +3,9 @@ body {
 }
 
 .header-image {
-	background: url(http://p1.pichost.me/i/45/1685510.jpg);/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover  */
+	/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover  */
 	background-position: top;
+	background-color: rgb(237,28,36);
 	height: auto;
 	display: block;
 	width: 100%;
