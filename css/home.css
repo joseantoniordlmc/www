@@ -1,5 +1,7 @@
 body {
-	margin-top: 0px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+	margin-top: 0px;
+	
+	padding-right: 0px; /* 50px is the height of the navbar - change this if the navbarn height changes */
 }
 
 .header-image {
@@ -55,9 +57,12 @@ body {
 	max-width: 150%;
 }
 .list-group>.list-group-item{
+	position: relative;
+	display: block;
 	text-align: center;
 	border: 1px solid rgb(237,28,36);
 	padding: 0px 0px;
+	margin-bottom: 0px;
 	margin-right: 0px
 	margin-left: 0px;
 
@@ -92,7 +97,7 @@ footer {
 
 .headline > .container > h1 {font-size: 105px;}
 .headline > .container > h2 {font-size: 50px;}
-.featurette-divider {margin: 40px 0;}
+.featurette-divider {margin: 0px;}
 .featurette-image {max-width: 50%;}
 .featurette-image.pull-left {margin-right: 10px;}
 .featurette-image.pull-right {margin-left: 10px;}
@@ -102,7 +107,7 @@ footer {
 
 @media (max-width: 768px) {
 	
-.container {margin: 0 15px;}
+.container {margin: 0px;}
 .featurette-divider {margin: 40px 0;}
 .featurette-heading {font-size: 25px;}
 
