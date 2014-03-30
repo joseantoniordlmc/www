@@ -35,6 +35,14 @@ html{
 	font-size: 20px;
 	text-align: center;
 }
+.element{
+	text-align: center;
+	
+}
+a,a:hover{
+	text-decoration: none;
+	color: black;
+}
 
 footer {
 	margin: 50px 0;
